@@ -8,17 +8,14 @@ class nodo
 {
 private:
 	T Dato; 
-	nodo<T> Siguiente; 
+	nodo<T> Siguiente;
 public:
-
 	nodo(T dato) {
 		Dato = dato;
 		Siguiente = NULL;
 	};
-
 	~nodo() {
 	};
-
 	void setDato(T* dato) {
 		this.Dato = dato;
 	};
