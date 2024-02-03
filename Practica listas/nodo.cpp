@@ -1,7 +1,7 @@
 #include "nodo.h"
 
 template <class T>
-nodo<T>::nodo(T* dato) {
+nodo<T>::nodo(T dato) {
 	Dato = dato;
 	Siguiente = NULL;
 }

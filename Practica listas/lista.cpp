@@ -14,7 +14,7 @@ void lista<T>::agregarFinal(T data) {
 	if (cabeza == NULL) {
 		cabeza->setDato(data);
 	}else {
-		nodo<T>* temp = cabeza;
+		nodo<T>* temp = &cabeza;
 		while (temp->getSiguiente() != NULL) {
 			temp = temp->getSiguiente();
 		}
@@ -28,7 +28,7 @@ void lista<T>::imprimirALL() {
 		cout << "La lista se encuentra vacia";
 	}
 	else {
-		nodo<T>* temp = cabeza;
+		nodo<T>* temp = &cabeza;
 		while (temp->getSiguiente() != NULL) {
 			cout << temp->getDato();
 			temp = temp->getSiguiente();

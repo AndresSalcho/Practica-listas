@@ -7,10 +7,10 @@ template <class T>
 class nodo
 {
 private:
-	T Dato;
-	nodo<T> Siguiente;
+	T Dato; 
+	nodo<T> Siguiente; 
 public:
-	nodo(T*);
+	nodo(T);
 	~nodo();
 	void setDato(T*);
 	void setSiguiente(T*);
