@@ -10,11 +10,26 @@ private:
 	T Dato; 
 	nodo<T> Siguiente; 
 public:
-	nodo(T);
-	~nodo();
-	void setDato(T*);
-	void setSiguiente(T*);
-	T* getDato();
-	nodo<T>* getSiguiente();
+
+	nodo(T dato) {
+		Dato = dato;
+		Siguiente = NULL;
+	};
+
+	~nodo() {
+	};
+
+	void setDato(T* dato) {
+		this.Dato = dato;
+	};
+	void setSiguiente(T* siguiente) {
+		this.Siguiente = siguiente;
+	};
+	T* getDato() {
+		return Dato;
+	};
+	nodo<T>* getSiguiente() {
+		return Siguiente;
+	};
 };
 
