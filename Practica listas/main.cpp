@@ -14,8 +14,11 @@ int main() {
 		cin >> res;
 		system("cls");
 	}
+	cout << "Digite el nombre del objeto";
+	cin >> dato;
+	system("cls");
 
-	lista.imprimirALL();
+	lista.imprimirObjeto(dato);
 
 	return 0;
 }

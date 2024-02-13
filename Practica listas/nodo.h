@@ -7,20 +7,20 @@ template <class T> class nodo
 {
 private:
 	T Dato; 
-	nodo<T>* Siguiente;
+	nodo *Siguiente;
 public:
-	nodo(T dato);
+	nodo(T dato, nodo*);
 	~nodo();
 	void setDato(T dato);
-	void setSiguiente(nodo<T>* siguiente);
+	void setSiguiente(nodo *siguiente);
 	T getDato();
-	nodo<T>* getSiguiente();
+	nodo *getSiguiente();
 };
 
 template <class T>
-nodo<T>::nodo(T dato) {
+nodo<T>::nodo(T dato,nodo* next) {
 	Dato = dato;
-	Siguiente = NULL;
+	Siguiente = next;
 }
 
 template <class T>
@@ -32,7 +32,7 @@ void nodo<T>::setDato(T dato) {
 }
 
 template <class T>
-void nodo<T>::setSiguiente(nodo<T>* siguiente) {
+void nodo<T>::setSiguiente(nodo* siguiente) {
 	this->Siguiente = siguiente;
 }
 
